@@ -1,0 +1,33 @@
+# Macro to be run in batch mode
+
+# Adjust the verbosity levels of run and the output of the console
+/control/cout/ignoreThreadsExcept 0
+/control/verbose 0
+/run/verbose 1
+
+# Define particle we are interested in to decay
+/gun/particle ion
+/gun/ion 49 110  # Mass then Atomic number
+
+# Simulate entire decay chain or simply single
+/rdecay01/fullChain false
+
+# Name of output root file, dependant on isotope we are studying
+/analysis/setFileName output_files/output_110In
+
+# Produce several 1D histograms managed by G4AnalysisManager and its Messenger
+# These are in the form /analysis/h1/set id nbBins valMin valMax unit name
+/analysis/h1/set 1  100  0. 4000 keV	#e+ e-
+/analysis/h1/set 2  100  0. 4000 keV	#neutrino
+/analysis/h1/set 3  100  0. 1000 keV	#gamma
+/analysis/h1/set 5  100  0.  200 eV	#recoil ion
+/analysis/h1/set 6  100  1.  2.5 MeV	#EkinTot (Q)
+/analysis/h1/set 7  100  0.    1 eV	#P balance
+/analysis/h1/set 8  100  0.   70 min	#time of life
+
+# Print progress of simulation every 10000 events
+/run/printProgress 10000  
+
+# Run simulation with number of events
+/run/beamOn 10000000
+#/run/beamOn 1

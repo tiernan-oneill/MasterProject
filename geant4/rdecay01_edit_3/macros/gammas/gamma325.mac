@@ -1,0 +1,23 @@
+# Macro 
+
+# Adjust the verbosity levels of run and the output of the console
+/control/cout/ignoreThreadsExcept 0
+/control/verbose 0
+/run/verbose 1
+
+# Define particle we are interested in to decay
+/gun/particle gamma
+/gun/energy 3.25 MeV
+
+# Simulate entire decay chain or simply single
+#/rdecay01/fullChain true
+#/rdecay01/fullChain false
+
+# Name of output root file, dependant on isotope we are studying
+/analysis/setFileName output_files/output_gamma325
+
+# Print progress of simulation every 10000 events
+/run/printProgress 1000
+
+# Run simulation with number of events
+/run/beamOn 10000

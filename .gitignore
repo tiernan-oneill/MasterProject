@@ -1,0 +1,29 @@
+# Ignore KamlandZen-800 data files
+/kamland-data/AllDataZen800Single-DoubleBeta.root
+/kamland-data/FileFromArticleSingle-DoubleBeta.root
+
+# Ignore my Geant4 build folders
+/geant4/rdecay01_edit_1/build
+/geant4/rdecay01_edit_2/build
+/geant4/rdecay01_edit_3/build
+
+# Ignore output figures from the python scripts
+/kamland-data/*.png
+/kamland-data/LL_vetoes/*.png
+/kamland-data/compare_datasets/figures/*.png
+
+/geant4/analysis/beta_spectra/figures/*.png
+
+/geant4/analysis/real_spectra/figures/*.png
+/geant4/analysis/real_spectra/figures/real/*.png
+
+/geant4/analysis/hit_counts/figures/*.png
+/geant4/analysis/hit_counts/figures/electrons/*.png
+/geant4/analysis/hit_counts/figures/gammas*.png
+/geant4/analysis/hit_counts/figures/positrons/*.png
+
+/geant4/analysis/visible_spectra/figures/*.png
+/geant4/analysis/visible_spectra/figures/smeared/*.png
+/geant4/analysis/visible_spectra/figures/visible/*.png
+
+/geant4/analysis/final_spectra/figures/*.png
