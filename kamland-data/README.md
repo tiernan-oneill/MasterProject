@@ -6,7 +6,7 @@
   
 ### compare_datasets
 
- Studies the difference in energy spectra before and after the 2023 paper, both in individual bins 
+ Studies the difference in energy spectra before and after the 2023 paper (https://arxiv.org/abs/2203.02139), both in individual bins 
  and in total. Useful for spotting the need for a 'hotspot' veto.
          	
 ### LL_vetoes
