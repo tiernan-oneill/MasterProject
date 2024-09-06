@@ -32,6 +32,6 @@
          	
 ### other
 
- Included are two data sets. A data set of isotope yields from FLUKA is used for normalizing our isotope 
+ Included are two data sets, both taken from https://arxiv.org/abs/2301.09307. A data set of isotope yields from FLUKA is used for normalizing our isotope 
  energy spectra. A data file contains rough y-values of the total visible energy spectrum of the KLG4 build, 
  to be used in the final graph.
